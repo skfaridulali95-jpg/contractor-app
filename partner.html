@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join as Contractor / Mistri / Sardar | Faiza Enterprises</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, Arial, sans-serif; }
+        body { background-color: #f1f5f9; color: #1e293b; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
+
+        nav { background-color: #0f172a; padding: 14px 20px; position: sticky; top: 0; z-index: 1000; border-bottom: 3px solid #f59e0b; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+        .brand-logo { color: #fbbf24; font-size: 1.3rem; font-weight: 800; text-decoration: none; }
+        .brand-logo span { color: #ffffff; font-weight: 400; }
+        .nav-links { display: flex; gap: 12px; flex-wrap: wrap; }
+        .nav-links a { color: #e2e8f0; text-decoration: none; font-size: 0.9rem; font-weight: 600; padding: 6px 10px; border-radius: 5px; transition: 0.2s; }
+        .nav-links a:hover, .nav-links a.active { background-color: #f59e0b; color: #0f172a; }
+
+        .page-banner { background: #14532d; color: white; padding: 28px 15px; text-align: center; }
+        .page-banner h1 { font-size: 1.75rem; margin-bottom: 5px; }
+        .page-banner p { color: #bbf7d0; font-size: 0.95rem; }
+
+        .container { max-width: 650px; margin: 30px auto; padding: 0 15px; flex: 1; width: 100%; }
+        .form-card { background: white; padding: 28px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 5px solid #16a34a; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; font-size: 0.9rem; font-weight: 700; color: #334155; margin-bottom: 5px; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 11px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.95rem; }
+        .submit-btn { width: 100%; padding: 13px; border: none; border-radius: 6px; background: #0f172a; color: #fbbf24; font-size: 1rem; font-weight: 700; cursor: pointer; transition: 0.2s; }
+        .submit-btn:hover { background: #1e293b; }
+
+        footer { background: #0f172a; color: #cbd5e1; text-align: center; padding: 22px 15px; font-size: 0.9rem; border-top: 3px solid #f59e0b; margin-top: auto; }
+        footer a { color: #fbbf24; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="brand-logo">FAIZA <span>ENTERPRISES</span></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="book.html">Book Work</a>
+            <a href="partner.html" class="active">Partner Join</a>
+        </div>
+    </nav>
+
+    <div class="page-banner">
+        <h1>🤝 Join as Contractor / Mistri / Sardar</h1>
+        <p>কন্ট্রাক্টর, টাইলস মিস্ত্রি বা লেবার সর্দার হিসেবে Faiza Enterprises-এর সাথে কাজ করতে যুক্ত হোন</p>
+    </div>
+
+    <div class="container">
+        <div class="form-card">
+            <form id="partnerForm">
+                <div class="form-group">
+                    <label>আপনার নাম (Name):</label>
+                    <input type="text" id="pName" placeholder="আপনার পূর্ণ নাম লিখুন" required>
+                </div>
+                <div class="form-group">
+                    <label>মোবাইল নম্বর (Phone Number):</label>
+                    <input type="tel" id="pPhone" placeholder="আপনার ফোন নম্বর দিন" required>
+                </div>
+                <div class="form-group">
+                    <label>কাজের এলাকা (Work City):</label>
+                    <select id="pCity">
+                        <option value="Bengaluru">Bengaluru (ব্যাঙ্গালোর)</option>
+                        <option value="West Bengal">West Bengal (ওয়েস্ট বেঙ্গল)</option>
+                        <option value="Both Bengaluru & West Bengal">Both (উভয় জায়গায়)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>কাজের ধরন (Work Category):</label>
+                    <select id="pSkill">
+                        <option value="Tiles & Granite Contractor / Mistri">Tiles & Granite Contractor / টাইলস মিস্ত্রি</option>
+                        <option value="Labour Sardar / Manpower Team">Labour Sardar / লেবার টিম</option>
+                        <option value="Civil / General Contractor">Civil / জেনারেল কন্ট্রাক্টর</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>টিম সাইজ ও অভিজ্ঞতা (Team Size & Details):</label>
+                    <textarea id="pDetails" rows="4" placeholder="যেমন: আমার সাথে ১০ জন টাইলস মিস্ত্রি/লেবার আছে, ৫ বছরের অভিজ্ঞতা..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">📲 হোয়াটসঅ্যাপে যুক্ত হোন</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>FAIZA ENTERPRISES</strong> — Tiles Contracting & Manpower Supply (Bengaluru & West Bengal)</p>
+        <p>Call / WhatsApp: <a href="tel:+917908716941">+91 79087 16941</a> | © 2026 All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const businessWhatsApp = "917908716941";
+        document.getElementById('partnerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('pName').value;
+            const phone = document.getElementById('pPhone').value;
+            const city = document.getElementById('pCity').value;
+            const skill = document.getElementById('pSkill').value;
+            const details = document.getElementById('pDetails').value;
+
+            const msg = `*FAIZA ENTERPRISES - NEW PARTNER JOIN*%0A%0A` +
+                        `👷 *Name:* ${name}%0A` +
+                        `📞 *Phone:* ${phone}%0A` +
+                        `📍 *City:* ${city}%0A` +
+                        `🔨 *Category:* ${skill}%0A` +
+                        `👥 *Team Details:* ${details}`;
+
+            window.open(`https://wa.me/${businessWhatsApp}?text=${msg}`, '_blank');
+        });
+    </script>
+
+</body>
+</html>
